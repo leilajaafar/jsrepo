@@ -31,3 +31,13 @@ function clearInputs() {
     document.getElementById('authorName').value = '';
     document.getElementById('bookDescription').value = '';
     document.getElementById('pagesNumber').value = '';}
+
+    //delete books
+    function deletebook(index) {
+        // Remove the book entry at the specified index from the 'books' array
+        books.splice(index, 1);
+        
+        // After deletion, refresh the displayed book list
+        showBooks();
+    }
+    
